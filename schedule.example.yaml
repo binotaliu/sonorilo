@@ -1,0 +1,11 @@
+- time: "9:30"
+  sound: westminster-chimes.ogg
+  type: normal
+  volume: 7
+- time: "10:30"
+  sound: westminster-chimes.ogg
+  type: normal
+  volume: 20
+- time: "11:30"
+  sound: westminster-chimes.ogg
+  type: normal
