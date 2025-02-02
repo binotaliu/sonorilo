@@ -71,14 +71,12 @@
 The `schedule.yaml` file defines each scheduled task. Each entry includes:
 - `time`: The time to play the sound, formatted as `HH:MM`.
 - `sound`: The filename of the sound file to play (stored in the `sounds/` folder).
-- `type`: Playback type, either `normal` or `bluetooth`.
 - `volume` (optional): Set volume level (0-100) for `normal` playback.
 
 ### Example Schedule File
 ```yaml
 - time: "9:30"
   sound: "westminster-chimes.ogg"
-  type: "normal"
   volume: 7
 - time: "10:00"
   sound: "amaryllis.ogg"
@@ -86,7 +84,7 @@ The `schedule.yaml` file defines each scheduled task. Each entry includes:
 ```
 
 ### Script Execution
-The Deno script `schedule.js` reads the `schedule.yaml` configuration file, checks the current time every minute, and plays the corresponding sound through either `play.sh` or `play-with-bluetooth.sh` based on the configuration.
+The Deno script `mod.js` reads the `schedule.yaml` configuration file, checks the current time every minute, and plays the corresponding sound through `play.sh` based on the configuration.
 
 ## License
 This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
